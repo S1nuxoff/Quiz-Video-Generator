@@ -70,28 +70,39 @@ for entry in data["combined_data"]:
     center_pos = (screen_width - image_width) / 2
     end_pos = screen_width
 
-    def question_position(t):
+    def question_position_with_swing(t):
         if 0 <= t < move_in_duration:
+            # Анимация появления
             progress = t / move_in_duration
             x = start_pos + (center_pos - start_pos) * ease_in_out(progress)
         elif (
             move_in_duration <= t < (question_end - question_start - move_out_duration)
         ):
-            x = center_pos
+            # Вопрос в центре экрана с легким качанием
+            center_time = t - move_in_duration  # Время с начала центральной фазы
+            swing_amplitude = 10  # Амплитуда качания (в пикселях)
+            swing_frequency = 0.5  # Частота качания (кол-во циклов в секунду)
+            x = center_pos + swing_amplitude * np.sin(
+                2 * np.pi * swing_frequency * center_time
+            ) * ease_in_out(
+                0.5 + 0.5 * np.sin(2 * np.pi * swing_frequency * center_time)
+            )
         elif (
             (question_end - question_start - move_out_duration)
             <= t
             <= (question_end - question_start)
         ):
+            # Анимация исчезновения
             t_rel = t - (question_end - question_start - move_out_duration)
             progress = t_rel / move_out_duration
             x = center_pos + (end_pos - center_pos) * ease_in_out(progress)
         else:
+            # Вне времени отображения
             x = 2 * screen_width
         return (x, "center")
 
     question_clip = (
-        question_clip.with_position(question_position)
+        question_clip.with_position(question_position_with_swing)
         .with_start(question_start)
         .with_duration(question_end - question_start)
     )
@@ -139,7 +150,7 @@ for entry in data["combined_data"]:
         print(
             f"Warning: Timer for answer {number} starts before the beginning of the video. Skipping timer addition."
         )
-monkey_clip = VideoFileClip("./assets/hooks/genius/genius.mov", has_mask=True)
+monkey_clip = VideoFileClip("./assets/hooks/minecrafter/minecrafter.mov", has_mask=True)
 if not monkey_clip.mask:
     monkey_clip = monkey_clip.with_opacity(0.5)
 if monkey_clip.duration > video_duration:

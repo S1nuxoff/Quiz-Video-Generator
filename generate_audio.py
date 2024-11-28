@@ -360,7 +360,7 @@ config = {
     "model_path": r"./assets/models/vosk-ru",
     "input_file": "./assets/voice/voice.wav",
     "output_file": "./output/output_audio.wav",
-    "hook": "./assets/hooks/genius/genius.mov",
+    "hook": "./assets/hooks/minecrafter/minecrafter.wav",
     "timestamps_file": "./output/timestamps.json",
     "questions_file": "./data/data.json",  # Path to questions file
     "background_music_file": "./assets/music/funy.wav",

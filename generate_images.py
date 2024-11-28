@@ -4,7 +4,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 # Конфигурация
 CONFIG = {
-    "font_path": "./assets/fonts/Rubik-Bold.ttf",
+    "font_path": "./assets/fonts/RussoOne-Regular.ttf",
     "font_size": 40,
     "question_bg_color": "#FFFFFF",
     "answer_bg_color": "#09B71D",
