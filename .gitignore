@@ -1,0 +1,8 @@
+# Игнорируем папку monkey
+assets/hooks/monkey/
+
+# Игнорируем папку minecraft
+assets/backgrounds/minecraft/
+
+# Игнорируем все файлы в папке output
+output/
