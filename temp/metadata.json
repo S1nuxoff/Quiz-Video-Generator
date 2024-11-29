@@ -1,0 +1,127 @@
+{
+    "combined_data": [
+        {
+            "number": 1,
+            "question": {
+                "start_time": 4312,
+                "end_time": 11182
+            },
+            "answer": {
+                "start_time": 11570,
+                "end_time": 14210
+            }
+        },
+        {
+            "number": 2,
+            "question": {
+                "start_time": 14210,
+                "end_time": 21380
+            },
+            "answer": {
+                "start_time": 21768,
+                "end_time": 23178
+            }
+        },
+        {
+            "number": 3,
+            "question": {
+                "start_time": 23178,
+                "end_time": 28788
+            },
+            "answer": {
+                "start_time": 29176,
+                "end_time": 31366
+            }
+        },
+        {
+            "number": 4,
+            "question": {
+                "start_time": 35656,
+                "end_time": 41296
+            },
+            "answer": {
+                "start_time": 41684,
+                "end_time": 43034
+            }
+        },
+        {
+            "number": 5,
+            "question": {
+                "start_time": 43034,
+                "end_time": 48974
+            },
+            "answer": {
+                "start_time": 49362,
+                "end_time": 51042
+            }
+        },
+        {
+            "number": 6,
+            "question": {
+                "start_time": 51042,
+                "end_time": 58932
+            },
+            "answer": {
+                "start_time": 59320,
+                "end_time": 61240
+            }
+        },
+        {
+            "number": 7,
+            "question": {
+                "start_time": 62945,
+                "end_time": 69845
+            },
+            "answer": {
+                "start_time": 70233,
+                "end_time": 71703
+            }
+        },
+        {
+            "number": 8,
+            "question": {
+                "start_time": 71703,
+                "end_time": 78543
+            },
+            "answer": {
+                "start_time": 78931,
+                "end_time": 80491
+            }
+        },
+        {
+            "number": 9,
+            "question": {
+                "start_time": 80491,
+                "end_time": 86161
+            },
+            "answer": {
+                "start_time": 86549,
+                "end_time": 88019
+            }
+        },
+        {
+            "number": 10,
+            "question": {
+                "start_time": 88019,
+                "end_time": 93778
+            },
+            "answer": {
+                "start_time": 94166,
+                "end_time": 97054
+            }
+        }
+    ],
+    "bites": [
+        {
+            "type": "custom_sound_3",
+            "start_time": 31366,
+            "end_time": 35656
+        },
+        {
+            "type": "custom_sound_6",
+            "start_time": 61240,
+            "end_time": 62945
+        }
+    ],
+    "audio_duration": 97057
+}

@@ -6,15 +6,15 @@ import json
 # Параметры
 vosk_model_path = "./assets/models/vosk-ru"
 input_audio_path = "./input/voice/voice.wav"
-questions_output_path = "./output/questions"
-answers_output_path = "./output/answers"
-final_audio_output_path = "./output/final"
+questions_output_path = "./temp/audio/questions"
+answers_output_path = "./temp/audio/answers"
+final_audio_output_path = "./temp/audio"
 bells_path = "./assets/sfx/answer"
 question_sfx_path = "./assets/sfx/question"
 timer_sound_path = "./assets/sfx/timer/timer.wav"
-background_music_path = "./assets/music/funy.wav"
+background_music_path = "./assets/music/ai_swing.wav"
 genius_sound_path = "./assets/hooks/genius/genius.wav"
-json_output_path = "./output/final/metadata.json"
+json_output_path = "./temp/metadata.json"
 
 # Настройки громкости
 bell_volume_db = -10

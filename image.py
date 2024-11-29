@@ -18,9 +18,9 @@ CONFIG = {
     "outline_width": 10,
     "success_image_path": "./assets/images/success/success.png",
     "number_image_dir": "./assets/images/numbers/v4",
-    "question_image_dir": "./assets/images/questions",
-    "answer_image_dir": "./assets/images/answers",
-    "data_path": "./data/data.json",
+    "question_image_dir": "./temp/images/questions",
+    "answer_image_dir": "./temp/images/answers",
+    "data_path": "./input/data/data.json",
     "fixed_width": 1080,
 }
 

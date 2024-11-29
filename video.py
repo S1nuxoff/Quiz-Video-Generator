@@ -8,7 +8,7 @@ import json
 import numpy as np
 
 # Загрузка данных из JSON
-with open("./output/final/metadata.json", "r", encoding="utf-8") as file:
+with open("./temp/metadata.json", "r", encoding="utf-8") as file:
     data = json.load(file)
 
 video_duration = data["audio_duration"] / 1000  # Перевод из миллисекунд в секунды
@@ -33,7 +33,7 @@ def ease_in_out(progress):
 
 
 # Загрузка видео фона
-background_video = VideoFileClip("./assets/backgrounds/minecraft/parkour_1.mp4")
+background_video = VideoFileClip("./assets/backgrounds/minecraft/parkour_3.mp4")
 
 # Зацикливание видео фона на длительность итогового видео
 background_loops = []
@@ -62,7 +62,7 @@ for entry in data["combined_data"]:
     # Вопрос
     question_start = entry["question"]["start_time"] / 1000
     question_end = entry["question"]["end_time"] / 1000
-    question_img_path = f"./assets/images/questions/question_{number}.png"
+    question_img_path = f"./temp/images/questions/question_{number}.png"
 
     question_clip = ImageClip(question_img_path)
     image_width, image_height = question_clip.size
@@ -80,8 +80,8 @@ for entry in data["combined_data"]:
         ):
             # Вопрос в центре экрана с легким качанием
             center_time = t - move_in_duration  # Время с начала центральной фазы
-            swing_amplitude = 10  # Амплитуда качания (в пикселях)
-            swing_frequency = 0.5  # Частота качания (кол-во циклов в секунду)
+            swing_amplitude = 0  # Амплитуда качания (в пикселях)
+            swing_frequency = 0  # Частота качания (кол-во циклов в секунду)
             x = center_pos + swing_amplitude * np.sin(
                 2 * np.pi * swing_frequency * center_time
             ) * ease_in_out(
@@ -110,7 +110,7 @@ for entry in data["combined_data"]:
 
     # Ответ
     answer_start = entry["answer"]["start_time"] / 1000
-    answer_img_path = f"./assets/images/answers/answer_{number}.png"
+    answer_img_path = f"./temp/images/answers/answer_{number}.png"
 
     answer_clip = (
         ImageClip(answer_img_path)
@@ -164,8 +164,7 @@ final_video = CompositeVideoClip(
     all_clips, size=(screen_width, screen_height)
 ).with_duration(video_duration)
 
-# Аудио
-audio_clip = AudioFileClip("./output/final/final_audio.wav")
-final_video = final_video.with_audio(audio_clip)
 
+audio_clip = AudioFileClip("./temp/audio/final_audio.wav")
+final_video = final_video.with_audio(audio_clip)
 final_video.write_videofile("./result/video.mp4", fps=24, bitrate="5000k")
