@@ -2,63 +2,54 @@
   "questions": [
     {
       "number": 1,
-      "category": "Приручение",
-      "question": "Что нужно сделать, чтобы приручить волка?",
-      "answer": "Дать ему кости."
+      "question": "How far would a baseball go if thrown on the Moon compared to Earth?",
+      "answer": "Over a mile, thanks to low gravity and no air resistance."
     },
     {
       "number": 2,
-      "category": "Инструменты",
-      "question": "Какой инструмент нужен, чтобы добыть обсидиан?",
-      "answer": "Алмазная кирка."
+      "question": "What color is Mars really?",
+      "answer": "Rusty orange due to iron oxide."
     },
+
     {
       "number": 3,
-      "category": "Инвентарь",
-      "question": "Сколько слотов в инвентаре игрока, включая слоты для брони?",
-      "answer": "40."
+      "question": "Why do astronauts feel weightless in space?",
+      "answer": "They’re in constant free-fall around Earth."
     },
     {
       "number": 4,
-      "category": "Мобы",
-      "question": "Какой моб взрывается, если подойти к нему слишком близко?",
-      "answer": "Крипер."
+      "question": "What’s strange about a day on Venus?",
+      "answer": "It’s longer than a Venusian year."
     },
     {
       "number": 5,
-      "category": "Ремесло",
-      "question": "Какой материал используется для создания кровати?",
-      "answer": "Доски и шерсть."
+      "question": "Can you hear a scream in space?",
+      "answer": "No, because space is a vacuum."
     },
     {
       "number": 6,
-      "category": "Строительство",
-      "question": "Сколько блоков песка нужно, чтобы создать одну стеклянную панель?",
-      "answer": "Один блок песка."
+      "question": "If the Sun were a basketball, what size would Earth be?",
+      "answer": "A peppercorn."
     },
     {
       "number": 7,
-      "category": "Биомы",
-      "question": "Какой биом считается самым редким в игре?",
-      "answer": "Грибной остров."
+      "question": "What does the Mars rover Perseverance do better than most humans?",
+      "answer": "It sings 'Happy Birthday' to itself."
     },
     {
       "number": 8,
-      "category": "Мобы",
-      "question": "Какой моб появляется, если ударить свинью молнией?",
-      "answer": "Зомби-свиночеловек."
+      "question": "If you fell into a black hole, what’s the first thing that would happen?",
+      "answer": "You’d stretch into a thin 'spaghettified' line."
     },
     {
       "number": 9,
-      "category": "Блоки",
-      "question": "Какой блок нельзя добыть даже алмазной киркой?",
-      "answer": "Бедрок."
+      "question": "What causes shooting stars?",
+      "answer": "Small meteoroids burning up in Earth’s atmosphere."
     },
     {
       "number": 10,
-      "category": "Структуры",
-      "question": "Как называется структура, которая появляется только в Эндере?",
-      "answer": "Энд-сити."
+      "question": "Which planet could float in water?",
+      "answer": "Saturn, because it’s less dense than water."
     }
   ]
 }
